@@ -4,7 +4,7 @@ import { TbFaceIdError } from 'react-icons/tb';
 
 const NotFound = () => {
   return (
-    <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-12 lg:px-24 py-10 gap-6 text-center">
+    <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-12 lg:px-18 py-10 gap-6 text-center">
       <span className="text-7xl text-blue-600">
         <TbFaceIdError className='animate-pulse' />
       </span>

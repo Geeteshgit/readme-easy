@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import GenerateForm from "./GenerateForm";
-import GeneratingLoader from "../GeneratingLoader";
+import GeneratingLoader from "./GeneratingLoader";
 import ReadmeContainer from "./ReadmeContainer";
+import GeneratedCounter from "./GeneratedCounter";
 
 const GenerateReadmeContainer = () => {
   const [isGenerated, setIsGenerated] = useState<boolean>(false);
@@ -12,13 +13,18 @@ const GenerateReadmeContainer = () => {
     <>
       {isGenerating && <GeneratingLoader />}
       {!isGenerated && !isGenerating && (
-        <GenerateForm
-          setIsGenerating={setIsGenerating}
-          setIsGenerated={setIsGenerated}
-          setReadme={setReadme}
-        />
+        <>
+          <GenerateForm
+            setIsGenerating={setIsGenerating}
+            setIsGenerated={setIsGenerated}
+            setReadme={setReadme}
+          />
+          <GeneratedCounter />
+        </>
       )}
-      {isGenerated && !isGenerating && <ReadmeContainer readme={readme} setReadme={setReadme} />}
+      {isGenerated && !isGenerating && (
+        <ReadmeContainer readme={readme} setReadme={setReadme} />
+      )}
     </>
   );
 };

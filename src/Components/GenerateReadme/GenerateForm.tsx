@@ -1,13 +1,8 @@
 "use client";
 import { useProjectForm } from "@/hooks/useProjectForm";
+import { GenerateFormProps } from "@/types/props";
 import React, { FormEvent } from "react";
 import { BsStars } from "react-icons/bs";
-
-interface GenerateFormProps {
-  setIsGenerating: (val: boolean) => void;
-  setIsGenerated: (val: boolean) => void;
-  setReadme: (val: string) => void;
-}
 
 const GenerateForm: React.FC<GenerateFormProps> = ({
   setIsGenerating,

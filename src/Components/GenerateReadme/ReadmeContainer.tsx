@@ -1,16 +1,15 @@
-import React from 'react'
+import React from "react";
+import MarkdownEditor from "./MarkdownEditor";
+import ReadmePreview from "./ReadmePreview";
+import { ReadmeProps } from "@/types/props";
 
-interface ReadmeContainerProps {
-    readme: string,
-    setReadme: (val: string) => void,
-}
-
-const ReadmeContainer:React.FC<ReadmeContainerProps> = ({ readme, setReadme }) => {
+const ReadmeContainer: React.FC<ReadmeProps> = ({ readme, setReadme }) => {
   return (
-    <div>
-        <pre>{readme}</pre>
+    <div className="w-full grid lg:grid-cols-2 gap-5 overflow-hidden">
+      <MarkdownEditor readme={readme} setReadme={setReadme} />
+      <ReadmePreview readme={readme} />
     </div>
-  )
-}
+  );
+};
 
-export default ReadmeContainer
+export default ReadmeContainer;

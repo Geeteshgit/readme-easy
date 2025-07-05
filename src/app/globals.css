@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 .font-archivo {
   font-family: var(--archivo);
 }
@@ -31,4 +30,17 @@ body {
       transparent 20px
     );
   background-size: 20px 20px;
+}
+
+@keyframes scalePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+.scale-pulse {
+  animation: scalePulse 3s ease-in-out infinite;
 }

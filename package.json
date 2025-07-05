@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "@google/genai": "^1.8.0",
+    "@monaco-editor/react": "^4.7.0",
+    "github-markdown-css": "^5.8.1",
+    "monaco-editor": "^0.52.2",
     "mongoose": "^8.16.1",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
