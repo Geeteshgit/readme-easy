@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
-import { Archivo, Geist, Geist_Mono, Roboto } from "next/font/google";
+import { Archivo, Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const archivo = Archivo({
   variable: "--archivo",
@@ -28,9 +18,16 @@ const roboto = Roboto({
   display: "swap",
 });
 
+const robotoMono = Roboto_Mono({
+  variable: "--roboto-mono",
+  weight: ["100", "200", "300","400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+})
+
 export const metadata: Metadata = {
-  title: "Readme Easy - AI-Powered README Generator",
-  description: "Generate clean, professional README.md files effortlessly using AI. Just fill out a simple form and let Readme Easy handle the rest.",
+  title: "ReadmeEasy - AI-Powered README Generator",
+  description: "Generate clean, professional README.md files effortlessly using AI. Just fill out a simple form and let ReadmeEasy handle the rest.",
 };
 
 export default function RootLayout({
@@ -41,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} ${roboto.variable} antialiased min-h-screen flex flex-col`}
+        className={`${archivo.variable} ${roboto.variable} ${robotoMono.variable} antialiased min-h-screen flex flex-col font-roboto`}
       >
         <Header />
         {children}

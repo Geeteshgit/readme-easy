@@ -1,0 +1,10 @@
+export interface ProjectDetails {
+  title?: string;
+  description?: string;
+  usage?: string;
+  technologies?: string;
+  github?: string;
+  live?: string;
+  author?: string;
+  contact?: string;
+}
