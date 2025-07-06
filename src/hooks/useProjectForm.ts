@@ -7,7 +7,6 @@ export const useProjectForm = () => {
     description: "",
     usage: "",
     technologies: "",
-    github: "",
     live: "",
     author: "",
     contact: "",

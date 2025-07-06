@@ -28,6 +28,9 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: "ReadmeEasy - AI-Powered README Generator",
   description: "Generate clean, professional README.md files effortlessly using AI. Just fill out a simple form and let ReadmeEasy handle the rest.",
+  icons: {
+    icon: '/favicon.svg'
+  }
 };
 
 export default function RootLayout({

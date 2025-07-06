@@ -112,23 +112,6 @@ const GenerateForm: React.FC<GenerateFormProps> = ({
       </div>
       <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-5">
         <label
-          htmlFor="github"
-          className="text-lg lg:text-xl font-roboto-mono text-nowrap"
-        >
-          Project GitHub Link
-        </label>
-        <input
-          name="github"
-          id="github"
-          type="text"
-          placeholder="Your Project's GitHub Link"
-          onChange={changeHandler}
-          value={project.github}
-          className="w-full border-b-2 outline-none pl-1"
-        />
-      </div>
-      <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-5">
-        <label
           htmlFor="live"
           className="text-lg lg:text-xl font-roboto-mono text-nowrap"
         >

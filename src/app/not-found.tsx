@@ -8,9 +8,9 @@ const NotFound = () => {
       <span className="text-7xl text-blue-600">
         <TbFaceIdError className='animate-pulse' />
       </span>
-      <h1 className="text-3xl sm:text-5xl font-bold">404 - Page Not Found</h1>
+      <h1 className="text-3xl sm:text-5xl font-bold">{"404 - Page Not Found"}</h1>
       <p className="text-base sm:text-lg opacity-75">
-        Oops! The page you're looking for doesn't exist or has been moved.
+        {"Oops! The page you're looking for doesn't exist or has been moved."}
       </p>
       <Link
         href="/"

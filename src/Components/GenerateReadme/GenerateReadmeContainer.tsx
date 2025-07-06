@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import GenerateForm from "./GenerateForm";
 import GeneratingLoader from "./GeneratingLoader";
-import ReadmeContainer from "./ReadmeContainer";
 import GeneratedCounter from "./GeneratedCounter";
+import dynamic from "next/dynamic";
+const ReadmeContainer = dynamic(() => import("./ReadmeContainer"));
 
 const GenerateReadmeContainer = () => {
   const [isGenerated, setIsGenerated] = useState<boolean>(false);
