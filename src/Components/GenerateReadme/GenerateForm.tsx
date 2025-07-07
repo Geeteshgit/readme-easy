@@ -2,6 +2,7 @@
 import { useProjectForm } from "@/hooks/useProjectForm";
 import { GenerateFormProps } from "@/types/props";
 import React, { FormEvent } from "react";
+import toast from "react-hot-toast";
 import { BsStars } from "react-icons/bs";
 
 const GenerateForm: React.FC<GenerateFormProps> = ({
@@ -27,7 +28,7 @@ const GenerateForm: React.FC<GenerateFormProps> = ({
       setReadme(data);
       setIsGenerated(true);
     } catch (err) {
-      console.error((err as Error).message);
+      toast.error("Failed to generate README");
     } finally {
       setIsGenerating(false);
     }
