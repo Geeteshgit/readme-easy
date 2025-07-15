@@ -14,6 +14,7 @@ export const useCopy = () => {
         setIsCopied(false);
       }, 2000);
     } catch (err) {
+      console.error((err as Error).message);
       toast.error("Failed to Copy!");
     }
   };

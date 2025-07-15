@@ -28,6 +28,7 @@ const GenerateForm: React.FC<GenerateFormProps> = ({
       setReadme(data);
       setIsGenerated(true);
     } catch (err) {
+      console.error((err as Error).message);
       toast.error("Failed to generate README");
     } finally {
       setIsGenerating(false);
