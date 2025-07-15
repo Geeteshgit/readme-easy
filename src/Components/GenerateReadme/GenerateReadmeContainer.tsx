@@ -1,9 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import GenerateForm from "./GenerateForm";
-import GeneratingLoader from "./GeneratingLoader";
-import GeneratedCounter from "./GeneratedCounter";
 import dynamic from "next/dynamic";
+import { GeneratedCounter, GenerateForm, GeneratingLoader } from "@/Components/GenerateReadme/index";
 const ReadmeContainer = dynamic(() => import("./ReadmeContainer"));
 
 const GenerateReadmeContainer = () => {

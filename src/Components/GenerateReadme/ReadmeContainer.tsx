@@ -1,6 +1,5 @@
 import React from "react";
-import MarkdownEditor from "./MarkdownEditor";
-import ReadmePreview from "./ReadmePreview";
+import { MarkdownEditor, ReadmePreview } from "@/Components/GenerateReadme/index";
 import { ReadmeProps } from "@/types/props";
 
 const ReadmeContainer: React.FC<ReadmeProps> = ({ readme, setReadme }) => {

@@ -1,7 +1,5 @@
-import Hero from '@/Components/Homepage/Hero'
-import HeroImage from '@/Components/Homepage/HeroImage'
-import HowItWorks from '@/Components/Homepage/HowItWorks'
 import React from 'react'
+import { Hero, HeroImage, HowItWorks } from "@/Components/Homepage/index";
 
 const HomePage = () => {
   return (

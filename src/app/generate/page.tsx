@@ -1,6 +1,6 @@
-import GenerateReadmeContainer from "@/Components/GenerateReadme/GenerateReadmeContainer";
 import { Metadata } from "next";
 import React from "react";
+import { GenerateReadmeContainer } from "@/Components/GenerateReadme/index";
 
 export const metadata: Metadata = {
   title: "Generate README - ReadmeEasy",
