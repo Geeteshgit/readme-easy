@@ -8,20 +8,20 @@ import { Toaster } from "react-hot-toast";
 const archivo = Archivo({
   variable: "--archivo",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
 const roboto = Roboto({
   variable: "--roboto",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
 const robotoMono = Roboto_Mono({
   variable: "--roboto-mono",
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
