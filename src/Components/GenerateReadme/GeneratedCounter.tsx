@@ -12,7 +12,7 @@ const GeneratedCounter = () => {
         }
       );
       const data = await response.json();
-      setCount(data);
+      setCount(data > 5 ? data - (data % 5) : data);
     } catch (err) {
       console.error((err as Error).message);
     }
@@ -23,7 +23,7 @@ const GeneratedCounter = () => {
 
   return (
     <p className="text-lg sm:text-2xl lg:text-3xl">
-      <strong>{count ? (count + "+") : 0}</strong> READMEs generated so far 🚀
+      <strong>{count ? (count + "+") : "Loading..."}</strong> READMEs generated so far 🚀
     </p>
   );
 };
