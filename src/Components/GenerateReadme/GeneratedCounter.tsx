@@ -12,7 +12,7 @@ const GeneratedCounter = () => {
         }
       );
       const data = await response.json();
-      setCount(data > 10 ? data - (data % 10) : data);
+      setCount(data);
     } catch (err) {
       console.error((err as Error).message);
     }
