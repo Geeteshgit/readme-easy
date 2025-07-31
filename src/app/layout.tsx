@@ -3,6 +3,7 @@ import { Archivo, Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "@/Components/index";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/next";
 
 const archivo = Archivo({
   variable: "--archivo",
@@ -48,6 +49,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
